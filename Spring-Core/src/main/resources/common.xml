@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="person" class="com.rays.test.Person"> <!-- bean is me object bhaja haa id me object diya hai class package diya hai -->
+	<property name="name" value="ram"/>
+	<property name="age" value="21"/>
+	
+	</bean>
+	
+	<bean id="emp" class="com.rays.test.Employee">
+	
+	<constructor-arg name="name" value="Ankit"></constructor-arg>
+	<constructor-arg name="company" value="tcs"></constructor-arg>
+	<constructor-arg name="salary" value="5000"></constructor-arg>
+	
+	</bean>
+</beans>
